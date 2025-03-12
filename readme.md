@@ -20,13 +20,13 @@ Para executar o projeto localmente, são necessárias algumas configurações. C
 Clone o projeto
 
 ```bash
-  git clone https://github.com/ededias/merchion-backend.git
+  git clone https://link-para-o-projeto
 ```
 
 Entre no diretório do projeto
 
 ```bash
-  cd merchion-backend
+  cd my-project
 ```
 
 Altere o `.env.dev` para `.env`
@@ -63,3 +63,45 @@ Verifique se as variáveis de ambiente estão corretamente configuradas, especia
 
 
 
+
+## Documentação da API
+
+#### Criação da uma nova conta
+
+```http
+  GET /api/createAccount
+```
+
+| Parâmetro   | Tipo       |  Obrigatório       | Descrição                           |
+| :---------- | :--------- | :---------  | :---------------------------------- |
+| `email` | `string`       |      sim    | Email do usuário |
+| `senha` | `string`       |      sim    | senha do usuário |
+| `nome` | `string`        |      sim    | nome do usuário |
+
+```
+{
+	"name": "João Alfredo",
+	"email": "joao@gmail.com",
+	"password": "123456"
+}
+
+```
+---
+#### Realiza login
+
+```http
+  GET /api/login
+```
+
+| Parâmetro   | Tipo       |  Obrigatório       | Descrição                           |
+| :---------- | :--------- | :---------  | :---------------------------------- |
+| `email` | `string`       |      sim    | Email do usuário |
+| `senha` | `string`       |      sim    | senha do usuário |
+
+```
+{
+	"email": "joao@gmail.com",
+	"password": "123456"
+}
+
+```
