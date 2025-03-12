@@ -69,7 +69,7 @@ Verifique se as variáveis de ambiente estão corretamente configuradas, especia
 #### Criação da uma nova conta
 
 ```http
-  GET /api/createAccount
+  POST /api/createAccount
 ```
 
 | Parâmetro   | Tipo       |  Obrigatório       | Descrição                           |
@@ -90,7 +90,7 @@ Verifique se as variáveis de ambiente estão corretamente configuradas, especia
 #### Realiza login
 
 ```http
-  GET /api/login
+  POST /api/login
 ```
 
 | Parâmetro   | Tipo       |  Obrigatório       | Descrição                           |
